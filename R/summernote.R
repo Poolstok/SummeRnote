@@ -11,12 +11,12 @@
 #' @export
 summernoteInput <- function(inputId, label = NULL, value = "", ...) {
   shiny::addResourcePath("summernote", system.file("www", package = "SummeRnote"))
-  
+
   tagList(shiny::singleton(
     shiny::tags$head(
       shiny::tags$script(src = "summernote/summernote_binding.js"),
-      shiny::tags$script(src = "summernote/summernote/summernote.js"),
-      shiny::tags$link(href = "summernote/summernote/summernote.css", rel = "stylesheet")
+      shiny::tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"),
+      shiny::tags$link(href = "https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css", rel = "stylesheet")
     )),
     if (!is.null(label)) shiny::tags$label(`for` = inputId, label),
     shiny::tags$div(class = "summernoteInput", id = inputId, style = "height: 200px;",
