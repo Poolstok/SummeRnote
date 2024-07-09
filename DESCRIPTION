@@ -1,9 +1,9 @@
 Package: SummeRnote
 Type: Package
 Title: Create a summernote editor for WYSIWYG HTML editing
-Version: 1.0
+Version: 2.0.1
 Author: Lukas Klass
-Maintainer: Lukas Klass <yourself@somewhere.net>
+Maintainer: Bernie Caessens <yourself@somewhere.net>
 Description: Create a summernote editor for WYSIWYG HTML editing
 License: None
 Encoding: UTF-8
